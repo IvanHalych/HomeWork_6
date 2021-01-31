@@ -6,4 +6,22 @@
 
   </PropertyGroup>
 
+    <PropertyGroup>
+        <CodeAnalysisRuleSet>.ca/CA.ruleset</CodeAnalysisRuleSet>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="StyleCop.Analyzers" />
+        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Update="StyleCop.Analyzers" Version="1.1.118" />
+        <PackageReference Update="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8" />
+    </ItemGroup>
+
+
 </Project>
